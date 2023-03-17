@@ -1,0 +1,27 @@
+@import "../../../themes/index.less";
+
+.component {
+  color: @light-0;
+  border-bottom: 1px solid @gray-400;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    .time {
+      color: @primary-300;
+      @typography-md-description-2-inter();
+    }
+    .label {
+      @typography-md-body();
+      .dot {
+        width: 15px;
+        display: inline-block;
+      }
+    }
+  }
+  .value {
+    color: @primary-300;
+    margin-left: 15px;
+    @typography-md-body-inter();
+  }
+}

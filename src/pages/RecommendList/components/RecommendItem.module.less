@@ -1,0 +1,31 @@
+@import "../../../themes/index.less";
+
+.component {
+  width: 100%;
+  height: 100%; /* 1:1 Aspect Ratio */
+  position: relative;
+  background-color: @dark-600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px 16px;
+  .title {
+    @typography-md-title-2-inter();
+    color: @primary-300;
+  }
+  .line {
+    width: 56px;
+    height: 1px;
+    background-color: @light-0;
+    // border: 0.1px solid @light-0;
+    margin: @margin-2 0;
+  }
+  .description {
+    @typography-md-body();
+    color: @light-0;
+    padding: @margin-base @margin-4;
+    display: inline-block;
+  }
+}

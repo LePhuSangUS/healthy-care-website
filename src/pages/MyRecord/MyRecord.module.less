@@ -1,0 +1,85 @@
+@import "../../themes/index.less";
+
+.page {
+  max-width: @max-width-section;
+  margin: 0 auto !important;
+  margin-bottom: 64px;
+  padding: 0 @padding-md-section;
+  .recordList {
+    margin-top: 56px !important;
+    margin-bottom: 56px !important;
+  }
+  .myExercise {
+    background: @dark-600;
+    padding: 16px 24px;
+    margin-bottom: 56px;
+    .myExerciseContent {
+      width: 100%;
+      height: 200px;
+      overflow: auto;
+      &::-webkit-scrollbar-thumb {
+        background-color: @primary-300;
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: #3f3f3f;
+      }
+    }
+    .title {
+      color: @light-0;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: start;
+      span {
+        display: inline-block;
+        &:first-child {
+          width: 60px;
+          @typography-md-body-inter();
+          margin-right: 20px;
+        }
+        &:last-child {
+          @typography-md-title-2-inter();
+        }
+      }
+    }
+  }
+
+  .myDiary {
+    margin-bottom: 44px;
+    .title {
+      @typography-md-title-2-inter();
+      margin-bottom: 10px;
+    }
+  }
+  .chart{
+    background: @dark-600;
+    padding: 16px 24px;
+    width: 100%;
+    margin-bottom: 56px;
+    .filter {
+      display: flex;
+    }
+    .title {
+      color: @light-0;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: start;
+      span {
+        display: inline-block;
+        &:first-child {
+          width: 60px;
+          @typography-md-body-inter();
+          margin-right: 20px;
+        }
+        &:last-child {
+          @typography-md-title-2-inter();
+        }
+      }
+    }
+  }
+}

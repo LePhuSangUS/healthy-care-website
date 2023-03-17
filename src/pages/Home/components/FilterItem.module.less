@@ -1,0 +1,33 @@
+@import "../../../themes/index.less";
+
+.component {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 32px;
+  .hexagon {
+    height: 116px;
+    width: 134px;
+    background: @primary-300-400;
+    position: relative;
+    box-sizing: border-box;
+    background: linear-gradient(155.89deg, #ffcc21 8.26%, #ff963c 91.18%);
+    transform: rotate(-90deg);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .label {
+      @typography-md-description-1-inter();
+      color: @light-0;
+    }
+  }
+}

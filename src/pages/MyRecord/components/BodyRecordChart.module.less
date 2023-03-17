@@ -1,0 +1,28 @@
+@import "../../../themes/index.less";
+
+.component {
+  background: @dark-600;
+  padding: 16px 24px;
+  width: 100%;
+  margin-bottom: 56px;
+  .filter {
+    display: flex;
+  }
+  .title {
+    color: @light-0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: start;
+    span {
+      display: inline-block;
+      &:first-child {
+        width: 60px;
+        @typography-md-body-inter();
+        margin-right: 20px;
+      }
+      &:last-child {
+        @typography-md-title-2-inter();
+      }
+    }
+  }
+}
