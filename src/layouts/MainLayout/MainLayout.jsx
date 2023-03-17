@@ -15,7 +15,7 @@ const MainLayout = (props) => {
       <div className={styles.outlet}>{<Outlet />}</div>
       <Footer />
       <BackTop
-      // visibilityHeight={300}
+      visibilityHeight={150}
       >
         <img src={iconCScroll} alt="icon" />
       </BackTop>

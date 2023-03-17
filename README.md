@@ -5,12 +5,13 @@ Npm : 8.5.0
 
 React : ^18.2.0
 
-OS : macOS Venture 13.0 
-
-Browser : Google Chrome 111.0.5563.64
-
 Builds the application on : ViteJS - 3.0.0 
 
+OS : macOS Venture 13.0 
+
+IDE : VSCode
+
+Browser : Google Chrome 111.0.5563.64
 
 # Start Project
 Step 1: npm i -f
