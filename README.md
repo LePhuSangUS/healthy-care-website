@@ -20,6 +20,10 @@ Step 2: npm start
   
 Step 3:  Open [http://localhost:9000](http://localhost:9000) to view it in your browser.
   
+# Github repo
+
+https://github.com/LePhuSangUS/healthy-care-website
+
 # Noted 
 I have a live build at   [here](https://healthy-care-website.vercel.app). You can preview it. 
 
