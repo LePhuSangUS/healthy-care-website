@@ -53,9 +53,9 @@ const Home = (props) => {
   };
   const renderTopPage = () => {
     return (
-      <Row>
-        <Col xs={24} sm={12} md={10}>
-          <div className={styles.achievementRate}>
+      <Row className={styles.topPage}>
+        <Col xs={24} sm={12} md={10} className={styles.achievementRateContainer}>
+          <div className={styles.achievementRateMain}>
             <img src={d01} alt="d01" />
 
             <div className={styles.circle}>
@@ -66,8 +66,11 @@ const Home = (props) => {
             </div>
           </div>
         </Col>
-        <Col xs={24} sm={12} md={14} className={styles.chart}>
+        <Col xs={24} sm={12} md={14} className={styles.chartContainer}>
+          <div className={styles.chartMain}>
           <Line {...config} />
+          </div>
+         
         </Col>
       </Row>
     );
@@ -89,9 +92,9 @@ const Home = (props) => {
         <Row className={styles.eatingList} gutter={[8, 8]}>
           {EATING_DATA_LIST_MOCK.map((item) => {
             return (
-              <Col xs={24} sm={12} md={6}>
+              <Col key={item.id} xs={24} sm={12} md={6}>
                 <EatingItem
-                  key={item.id}
+                  
                   image={item.image}
                   date={item.date}
                   type={item.type}

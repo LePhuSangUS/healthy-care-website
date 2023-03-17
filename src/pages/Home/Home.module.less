@@ -2,9 +2,12 @@
 
 .page {
   margin-bottom: 64px;
-  .achievementRate {
+  .achievementRateContainer{
+    height:320px;
+  }
+  .achievementRateMain {
     width: 100%;
-    padding-top: 75%;
+    // padding-top: 75%;
     height: 100%;
     position: relative;
     img {
@@ -41,9 +44,15 @@
       }
     }
   }
-  .chart {
+  .chartContainer {
     background: #2e2e2e;
     padding: 20px 30px;
+    height:320px;
+    box-sizing: border-box;
+    .chartMain{
+        height: 100%;
+    }
+
   }
   .eatingList {
     max-width: @max-width-section;

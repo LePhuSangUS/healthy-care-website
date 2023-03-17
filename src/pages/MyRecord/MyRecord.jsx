@@ -76,7 +76,6 @@ const MyRecord = (props) => {
             return (
               <Col key={item.id} xs={24} sm={12} md={6}>
                 <MyDiaryItem
-                  key={item.id}
                   label={item.label}
                   content={item.content}
                   time={item.time}
