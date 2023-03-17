@@ -6,10 +6,10 @@ import styles from "./Home.module.less";
 import { d01, circle } from "@Assets/images/index";
 import { Row, Col } from "antd";
 import {
-  FILTER_DATA_LIST,
-  EATING_DATA_LIST_MOCK,
+  EATING_DATA_LIST,
   CHART_DATA_LIST,
-} from "@Consts";
+} from "@Mock";
+import { FILTER_DATA_LIST } from "@Consts"
 import EatingItem from "./components/EatingItem";
 import FilterItem from "./components/FilterItem";
 import { Button } from "@Components";
@@ -54,10 +54,14 @@ const Home = (props) => {
   const renderTopPage = () => {
     return (
       <Row className={styles.topPage}>
-        <Col xs={24} sm={12} md={10} className={styles.achievementRateContainer}>
+        <Col
+          xs={24}
+          sm={12}
+          md={10}
+          className={styles.achievementRateContainer}
+        >
           <div className={styles.achievementRateMain}>
             <img src={d01} alt="d01" />
-
             <div className={styles.circle}>
               <img src={circle} alt="d01" />
               <div className={styles.rate}>
@@ -68,9 +72,8 @@ const Home = (props) => {
         </Col>
         <Col xs={24} sm={12} md={14} className={styles.chartContainer}>
           <div className={styles.chartMain}>
-          <Line {...config} />
+            <Line {...config} />
           </div>
-         
         </Col>
       </Row>
     );
@@ -90,11 +93,10 @@ const Home = (props) => {
     return (
       <Fragment>
         <Row className={styles.eatingList} gutter={[8, 8]}>
-          {EATING_DATA_LIST_MOCK.map((item) => {
+          {EATING_DATA_LIST.map((item) => {
             return (
               <Col key={item.id} xs={24} sm={12} md={6}>
                 <EatingItem
-                  
                   image={item.image}
                   date={item.date}
                   type={item.type}

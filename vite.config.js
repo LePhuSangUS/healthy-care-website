@@ -90,7 +90,7 @@ export default defineConfig(  ({ command, mode }) => {
           { find: '@Consts', replacement: resolve(projectRootDir, 'src/consts') },
           { find: '@Store', replacement: resolve(projectRootDir, 'src/store') },
           { find: '@Common', replacement: resolve(projectRootDir, 'src/components/common') },
-          { find: '@Hocs', replacement: resolve(projectRootDir, 'src/hocs') },
+          { find: '@Mock', replacement: resolve(projectRootDir, 'src/mock') },
       
         ],
       },

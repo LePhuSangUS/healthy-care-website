@@ -9,7 +9,7 @@ import {
   RECORD_DATA_LIST,
   MY_EXERCISE_DATA_LIST,
   MY_DIARY_DATA_LIST,
-} from "@Consts";
+} from "@Mock";
 import RecordItem from "./components/RecordItem";
 import BodyRecordChart from "./components/BodyRecordChart";
 import MyExerciseItem from "./components/MyExerciseItem";

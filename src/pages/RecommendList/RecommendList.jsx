@@ -1,11 +1,10 @@
 //Lib
 //Components
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 //Styled
 import styles from "./RecommendList.module.less";
-import { d01 } from "@Assets/images/index";
 import { Row, Col } from "antd";
-import { RECOMMEND_DATA_LIST, RECOMMEND_IMAGES_DATA_LIST } from "@Consts";
+import { RECOMMEND_DATA_LIST, RECOMMEND_IMAGES_DATA_LIST } from "@Mock";
 import RecommendItem from "./components/RecommendItem";
 import RecommendVideoItem from "./components/RecommendVideoItem";
 import { Button } from "@Components";
@@ -36,7 +35,6 @@ const RecommendList = (props) => {
             return (
               <Col key={item.id} xs={24} sm={12} md={6}>
                 <RecommendVideoItem
-                  
                   image={item.image}
                   date={item.date}
                   tag={item.tag}

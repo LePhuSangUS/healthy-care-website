@@ -6,7 +6,7 @@ import styles from "./Header.module.less";
 import { iconMenu, iconClose } from "@Assets/icons/index";
 import { logo } from "@Assets/logo";
 import { Link, useLocation } from "react-router-dom";
-import { HEADER_DATA, MENU_DATA_LIST } from "@Consts";
+import { HEADER_DATA_LIST, MENU_DATA_LIST } from "@Consts";
 import { ROUTES_NAME } from "../../appRoute/routes-name";
 import { Dropdown, Space } from "antd";
 import { useToggle } from "react-use";
@@ -34,7 +34,7 @@ const Header = (props) => {
         </Link>
         <div className={styles.navMain}>
           <nav className={styles.navContent}>
-            {HEADER_DATA?.map((item) => {
+            {HEADER_DATA_LIST?.map((item) => {
               return (
                 <Link
                   className={classNames(styles.navItem, {
